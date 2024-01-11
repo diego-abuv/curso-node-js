@@ -3,7 +3,7 @@ require("dotenv").config();
 const ConnectToDatabase = async () => {
   try {
     await mongoose.connect(
-      `mongodb+srv://${process.env.MONGODB_USER}:${process.env.MONGODB_PASS}@cursonodejs.tsfd0sw.mongodb.net/?retryWrites=true&w=majority`
+      `mongodb+srv://${process.env.MONGODB_USER}:${process.env.MONGODB_PASS}@cursonodejs.tsfd0sw.mongodb.net/database?retryWrites=true&w=majority`
     );
     console.log("Conexão ao banco de dados realizada com sucesso!");
   } catch (error) {
