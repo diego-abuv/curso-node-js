@@ -22,7 +22,7 @@ fs.writeFile(
 
     console.log(`Arquivo criado com êxito!`);
 
-    // Adicionar a um arquivo
+    // Atualizar um arquivo
     fs.appendFile(
       path.join(__dirname, `/test`, `test.txt`),
       `Hello World!`,

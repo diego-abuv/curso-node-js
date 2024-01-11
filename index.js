@@ -1,9 +1,17 @@
-const { Person } = require("./person");
+// const { Person } = require("./person");
 
-require(`./person.js`);
-require("./modules/path");
-require(`./modules/fs`);
+const dotenv = require(`dotenv`);
 
-const person = new Person("Diego");
+const ConnectToDatabase = require(`./src/database/connect`);
 
-console.log(person.sayMyName());
+dotenv.config;
+
+ConnectToDatabase();
+
+// require(`./person.js`);
+// require("./modules/path");
+// require(`./modules/fs`);
+// require(`./modules/http`);
+// require(`./modules/express`);
+
+// const person = new Person("Diego");
